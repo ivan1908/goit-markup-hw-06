@@ -731,6 +731,14 @@ input {
     flex-direction: column;
     margin-bottom: 10px;
 }
+.form-field-feedback {
+    display: flex;
+    flex-direction: column;
+}
+.form-field-checkbox {
+    display: flex;
+    flex-direction: column;
+}
 .form-label {
     font-weight: 400;
     font-size: 12px;
@@ -808,6 +816,10 @@ input {
 .form-input:focus+.form-icon {
     fill: var(--link-color);
 }
+.checkbox {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 .label {
     font-weight: 400;
     font-size: 14px;
@@ -815,10 +827,8 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
 }
-.checkbox {
+.checkbox-input {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -839,6 +849,7 @@ input {
     color: var(--link-color);
 }
 .icon {
+    
     width: 16px;
     height: 15px;
     fill: #ffffff;
@@ -846,11 +857,11 @@ input {
     border-radius: 2px;
     border: 2px solid var(--button-filter-color);
 }
-.checkbox:checked + .icon {
+.checkbox-input:checked + .icon {
     background-color: var(--button-bg-color);
     border-color: var(--button-bg-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.checkbox:focus + .icon {
+.checkbox-input:focus + .icon {
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5);
 }
